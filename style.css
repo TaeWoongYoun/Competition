@@ -1,0 +1,67 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+ul li{
+    padding-left: 0;
+    list-style: none;
+}
+
+/* 비주얼 영역 코드 / 디자인 없음 */
+.window{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.slide{
+    width: 500%;
+    height: 400px;
+    display: flex;
+    position: relative;
+    animation: 16s infinite linear slide;
+}
+
+.slide li{
+    width: 100%;
+    height: 400px;
+}
+
+@keyframes slide{
+    0%{
+        left: 0;
+    }
+
+    20%{
+        left: 0;
+    }
+
+    25%{
+        left: -100%;
+    }
+
+    45%{
+        left: -100%;
+    }
+
+    50%{
+        left: -200%;
+    }
+
+    70%{
+        left: -200%;
+    }
+
+    75%{
+        left: -300%;
+    }
+
+    95%{
+        left: -300%;
+    }
+
+    100%{
+        left: -400%;
+    }
+}
