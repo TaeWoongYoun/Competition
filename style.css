@@ -8,6 +8,11 @@ ul li{
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* 비주얼 영역 코드 / 디자인 없음 */
 .window{
     width: 100%;
@@ -64,4 +69,45 @@ ul li{
     100%{
         left: -400%;
     }
+}
+
+.card{
+    width: 400px;
+    height: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 2px solid lightblue;
+}
+
+.imgBox{
+    width: 400px;
+    height: 300px;
+    background-color: lightblue;
+}
+
+.imgBox img{
+    width: 100%;
+    height: 100%;
+}
+
+.textBox{
+    padding: 20px;
+}
+
+p{
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+button{
+    width: 150px;
+    height: 40px;
+    border: none;
+    border-radius: 15px;
+    background-color: lightblue;
+    /* color: #fff; */
+    font-size: 16px;
+    font-weight: 900;
 }
