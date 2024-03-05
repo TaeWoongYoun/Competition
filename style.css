@@ -3,6 +3,10 @@
     margin: 0;
 }
 
+html, body{
+    height: 100%;
+}
+
 ul li{
     padding-left: 0;
     list-style: none;
@@ -94,14 +98,14 @@ a{
     padding: 20px;
 }
 
-p{
+.textBox p{
     font-weight: 600;
     font-size: 15px;
     padding-top: 10px;
     padding-bottom: 20px;
 }
 
-button{
+.textBox button{
     width: 150px;
     height: 40px;
     border: none;
@@ -110,4 +114,132 @@ button{
     /* color: #fff; */
     font-size: 16px;
     font-weight: 900;
+}
+
+/* game schedule 영역 */
+table{
+    table-layout: fixed;
+}
+
+table, th, td {
+    border: 1px solid black; 
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+td:hover{
+    background-color: lightblue;
+}
+
+th{
+    font-weight: bold; 
+    height: 30px;
+}
+
+td{
+    text-align: left; 
+    vertical-align: text-top; 
+    width: 50px; 
+    height: 50px; 
+    padding: 5px;
+    transition: all 0.3s;
+}
+
+.holiday{
+    color: red;
+}
+
+.blueday{
+    color: blue;
+}
+
+#today{
+    font-weight: bold; 
+    background-color: bisque;
+}
+
+.year{
+    font-size: 30px;
+}
+
+.month{
+    font-size: 50px; 
+    font-weight: bold;
+}
+
+/* 게임 스케쥴 모달창 영역 */
+input{
+    display: none;
+}
+
+.openBtn{
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.back{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.5); /* 초기에 투명 배경 설정 */
+    /* display: none; */
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 1s ease; /* 배경 트랜지션 속성 추가 */
+}
+
+.modalBox{
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 3px solid black;
+    z-index: 1;
+    text-align: center;
+}
+
+.closeBtn{
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.closeBtn p{
+    text-align: center;
+    line-height: 30px;
+    width: 70px;
+    height: 30px;
+    font-weight: 900;
+    background-color: black;
+    color: aliceblue;
+    padding-left: 3px;
+    padding-bottom: 3px;
+}
+
+.text p{
+    font-size: 24px;
+    font-weight: 900;
+    line-height: 300px;
+}
+
+#modal:checked~.back{
+    /* display: block; */
+    visibility: visible;
+    opacity: 1;
+}
+
+/* 게임 스케쥴 모달창 영역 */
+.gameNow{
+    width: 426px;
+    height: 300px;
+    background-color: #fff;
+    border: 1px solid black;
+    border-top: none;
 }
