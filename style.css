@@ -189,6 +189,7 @@ input{
     visibility: hidden;
     opacity: 0;
     transition: opacity 1s ease; /* 배경 트랜지션 속성 추가 */
+    z-index: 1;
 }
 
 .modalBox{
@@ -200,7 +201,7 @@ input{
     transform: translate(-50%, -50%);
     background-color: #fff;
     border: 3px solid black;
-    z-index: 1;
+    z-index: 2;
     text-align: center;
 }
 
