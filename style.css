@@ -30,7 +30,7 @@ a{
     display: flex;
     position: relative;
     animation: 16s infinite linear slide;
-}
+} 
 
 .slide li{
     position: relative;
